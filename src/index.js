@@ -11,11 +11,12 @@ const rulesOfTheGame = (game, rule) => {
     const [correctAnswer, question] = game();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
-    if (correctAnswer !== answer) {
+    if (correctAnswer === answer) {
+      console.log('Correct!');
+    } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
-    } else {
-      console.log('Correct!');
+      return;
     }
     console.log(`Congratulations, ${userName}!`);
   }
