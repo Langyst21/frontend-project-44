@@ -9,8 +9,8 @@ const game = () => {
   const correctAnswer = isEven(number) ? 'yes' : 'no';
   const Quest = number;
   return [correctAnswer, Quest];
-  
 };
+
 const gameEven = () => {
   rulesOfTheGame(game, rule);
 };
