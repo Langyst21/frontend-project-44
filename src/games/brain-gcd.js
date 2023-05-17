@@ -21,7 +21,7 @@ const game = () => {
 };
 
 const gameGcd = () => {
-    rulesOfTheGame(game, rule);
+  rulesOfTheGame(game, rule);
 };
 
 export default gameGcd;
